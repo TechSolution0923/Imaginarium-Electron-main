@@ -1,0 +1,123 @@
+{
+  "name": "stock-app",
+  "version": "0.1.0",
+  "description": "Imaginarium Web App",
+  "private": true,
+  "main": "main.js",
+  "homepage": "./",
+  "dependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@tinymce/tinymce-react": "^4.1.0",
+    "apexcharts": "^3.35.5",
+    "axios": "^0.27.2",
+    "chart.js": "^3.9.1",
+    "cross-env": "^7.0.3",
+    "daisyui": "^2.17.0",
+    "electron-is-dev": "^2.0.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "filepond": "^4.30.4",
+    "filepond-plugin-image-preview": "^4.6.11",
+    "install": "^0.13.0",
+    "npm": "^8.12.2",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-normalize": "^10.0.1",
+    "postcss-preset-env": "^7.7.2",
+    "react": "^18.2.0",
+    "react-apexcharts": "^1.4.0",
+    "react-apple-login": "^1.1.3",
+    "react-calendar-heatmap": "^1.9.0",
+    "react-chartjs-2": "^4.3.1",
+    "react-dom": "^18.2.0",
+    "react-donut-chart": "^1.3.1",
+    "react-google-login": "^5.2.2",
+    "react-icons": "^4.4.0",
+    "react-is": "^18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.3.0",
+    "react-scripts": "5.0.1",
+    "react-sliding-pane": "^7.1.0",
+    "rgb-hex": "^4.0.0",
+    "sass": "^1.52.3",
+    "tailwind-scrollbar-hide": "^1.1.7",
+    "tinymce": "^6.1.0",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "elec": "electron main.js",
+    "start": "SET PORT=3000 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "concurrently -k \"cross-env BROWSER=none npm start\" \"npm:electron\"",
+    "electron": "wait-on http://localhost:3000 && electron .",
+    "package": "react-scripts build && electron-forge package",
+    "make-mac": "react-scripts build && electron-forge make --platform darwin",
+    "make-linux": "react-scripts build && electron-forge make --platform linux",
+    "make": "react-scripts build && electron-forge make"
+  },
+  "author": "ATO",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@electron-forge/maker-deb": "^6.0.0-beta.64",
+    "@electron-forge/maker-dmg": "^6.0.0-beta.64",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.64",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.64",
+    "@electron-forge/maker-zip": "^6.0.0-beta.64",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.2",
+    "electron": "^19.0.4",
+    "postcss": "^8.4.14",
+    "postcss-loader": "^7.0.0",
+    "tailwindcss": "^3.1.4",
+    "wait-on": "^6.0.1"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin",
+            "linux",
+            "win32"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {}
+        }
+      ]
+    }
+  }
+}

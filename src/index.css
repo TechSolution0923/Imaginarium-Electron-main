@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: mulish;
+  src: url("../public/assets/font/Mulish/Mulish-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "mulish", Mulish;
+}
+
+
+[type="checkbox"], [type="radio"] {
+  color: #0e0e0e;
+}
+
+[type="checkbox"]:focus {
+  --tw-ring-offset-width: 0px
+  --tw-ring-color: #0e0e0e;
+}
+
+[type='radio']:focus {
+  --tw-ring-offset-width: 0px
+  --tw-ring-color: #0e0e0e;
+}
+
+[type='text']:focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus {
+  --tw-ring-offset-width: 0px
+  --tw-ring-color: #0e0e0e;
+}
+
+.slide {
+  @apply !z-0
+}
+
+.control-dots {
+  @apply !m-0 h-6 bg-[#101010]
+}
+
+.tox .tox-tinymce .tox-platform-touch {
+  height: 100%;
+}
+
+.slide .selected {
+  background-size: cover;
+}
+
+.tox.tox-tinymce {
+  height: 100% !important;
+}
+
+.apexcharts-tooltip {
+  background-color: #0E0E0E !important;
+  color: #FFFFFF !important;
+  border: 1px solid #404040;
+}
+
+.apexcharts-tooltip-series-group .apexcharts-active {
+  background-color: #0E0E0E !important;
+}
+
+
+

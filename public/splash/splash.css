@@ -1,0 +1,86 @@
+.splash{
+  max-width: 800px;
+  position: relative;
+  margin: 0 auto
+}
+.background {
+width: 100%;
+height: 450px;
+}
+
+.background-text {
+  top: 12px;
+  right: 16px;
+  color: #FFFFFF;
+  position: absolute;
+  font-family: Mulish;
+  font-style: ExtraBold;
+  font-size: 9px;
+  line-height: 20px 177%;
+  letter-spacing: 21%;
+  opacity: 50%;
+}
+
+.content {
+  background-color: #2B2B2B;
+  box-shadow: 0px -16px 33px rgba(0, 0, 0, 0.2), inset 0px 1px 0px #161616;
+  position: relative;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-union {
+  width: 40px;
+  height: 40px;
+}
+
+.content-imaginarium {
+  width: 200px;
+  height: 24px;
+  margin: 8px 0px 8px 16px;
+}
+
+.content-imaginarium-text {
+  margin: 4px 0px 4px 16px;
+  height: 30px;
+  font-family: SYSTEM-UI;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 24px;
+  /* identical to box height, or 75% */
+
+  letter-spacing: 0.66px;
+
+  /* Colors/Primary */
+
+  background: linear-gradient(90deg, #FEAC6D 0%, #AE61ED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.content-version-text {
+  margin: 8px 0px 0px 4px;
+  color: #5F5F5F;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.content-text {
+  margin: 10px 0px;
+  color: #CDCDCD;
+  font-family: Mulish;
+  line-height: 20px 159%;
+}
+/*margin: 22px 0px 8px 4px;*/
